@@ -1,4 +1,6 @@
 # compiled output
+/k8s-images-offline/helm
+/k8s-images-offline/compose
 /k8s-images-offline/*.tar.gz
 /images.txt
 /k8s-images-offline/vulnerability_scan.txt
