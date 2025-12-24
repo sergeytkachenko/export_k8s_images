@@ -7,10 +7,7 @@ This directory contains Docker images exported for offline use.
 - **Total Images**: 6
 - **Successfully Pulled**: 6
 - **Successfully Saved**: 6
-- **Export Date**: 2025-12-24T14:19:12.861Z
-
-
-
+- **Export Date**: 2025-12-24T14:23:58.418Z
 
 ## How to Load Images
 
@@ -33,15 +30,6 @@ Load all images:
 
 ```bash
 for file in *.tar.gz; do gunzip -c "$file" | docker load; done
-```
-
-### Option 3: Windows (PowerShell)
-
-```powershell
-Get-ChildItem -Filter *.tar.gz | ForEach-Object {
-    Write-Host "Loading $($_.Name)..."
-    & docker load -i $_.FullName
-}
 ```
 
 ## Files
